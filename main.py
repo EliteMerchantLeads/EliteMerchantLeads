@@ -13,7 +13,7 @@ def submit():
     industry = request.form.get("industry")
     revenue = request.form.get("revenue")
 
-    # Save the lead to a text file (temporary storage)
+    # Save the lead to a text file (for now)
     with open("leads.txt", "a") as file:
         file.write(f"Name: {name}, Email: {email}, Industry: {industry}, Revenue: {revenue}\n")
 
